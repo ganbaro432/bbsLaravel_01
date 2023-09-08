@@ -1,0 +1,185 @@
+
+html {
+  scroll-behavior: smooth;
+}
+.thcombody a,
+.newcomment a,
+.js-replist,
+.js-replist-done,
+.js-replist-close,
+.reppopdone,
+.reppop {
+    color:#39a9bf;
+}
+.thcombody {
+    overflow-wrap: break-word;
+}
+.grecaptcha-badge { 
+    visibility: hidden;
+ }
+.liked {
+color: rgb(233, 116, 19);
+}
+.disliked{
+color: rgb(106, 134, 214);
+}   
+
+/* モーダル */
+/* 開くボタン */
+.button-open {
+    color: #9ca3af;
+    border-radius: 20rem;
+    cursor: pointer;
+  }
+  /* モーダルウィンドウ */
+.modal-window {
+    display: none;    
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 200px;
+    background-color: #dfdddd;
+    border-radius: 5px;
+    z-index: 11;
+    padding: 2rem;
+  }
+  /* 閉じるボタン */
+  .button-close {
+    cursor: pointer;
+  }
+  .overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+  }
+  .ngname {
+    margin-bottom:10px;
+  }
+
+  /* コメントフォームJquery */
+  .com-form {
+    display: none;
+  }
+  /* 返信リスト */
+  .reparea, .js-replist-done, .js-replist-close {
+    display: none;
+  }
+
+  /* リプポップアップ */
+  .rep-window {
+    display: none;    
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    border-radius: 0px;
+    z-index: 11;
+    padding: 1rem;
+  }
+  .repcontent {
+    display: none;    
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    border-radius: 0px;
+    z-index: 11;
+    padding: 1rem;
+  }
+
+  /* ハンバーガーメニュー */
+  /* #g-nav{
+	z-index: -1;
+	opacity: 0;
+	top:0;
+	width:100%;
+  height: 100vh;
+	background:#999;
+	transition: all 0.3s;
+} */
+#g-nav.panelactive {
+  opacity: 1;
+  z-index: 9998;
+}
+#g-nav.panelactive #g-nav-list{
+  position: fixed;
+  z-index: 9998; 
+  width: 100%;
+  height: 100vh;/*表示する高さ*/
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+#g-nav.panelactive ul {
+  display: block;
+}
+.openbtn {
+  z-index: 9999;
+}
+.openbtn.active span:nth-of-type(1) {
+  top: 18px;
+  left: 18px;
+  transform: translateY(6px) rotate(-45deg);
+  width: 50%;
+}
+
+.openbtn.active span:nth-of-type(2) {
+opacity: 0;
+}
+
+.openbtn.active span:nth-of-type(3){
+  top: 30px;
+  left: 18px;
+  transform: translateY(-6px) rotate(45deg);
+  width: 50%;
+}
+
+/* pagebutton */
+.pagebutton {
+	display: flex;
+	justify-content:center;
+	align-items:center;
+	background:#ffffff;
+  box-shadow: 0 2px 6px rgba(0,0,0,.2), 0 4px 10px rgba(0,0,0,.15);
+	border-radius: 30px;
+	width: 50px;
+	height: 50px;
+	color: #f97316;
+	text-align: center;
+	text-transform: uppercase; 
+	text-decoration: none;
+	font-size:0.6rem;
+	transition:all 0.3s;
+}
+
+.pagebutton:active{
+	background: #a5551f;
+}
+.pagebutton {
+	position: fixed;
+	right: 10px;
+	bottom:10px;
+	z-index: 2;
+}
+i.fas.fa-angle-down {
+  font-size: 1.5rem;
+}
+@media screen and (max-width: 480px) {
+	/* 480px以下に適用されるCSS（スマホ用） */
+  .pagebutton {
+    width: 40px;
+    height: 40px;
+  }
+}

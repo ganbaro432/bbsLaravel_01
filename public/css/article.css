@@ -1,0 +1,96 @@
+@charset "utf-8";
+
+
+#article_body h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+#article_body h2 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+#article_body h3 {
+    font-size: 1.75rem;
+    font-weight: 600;
+}
+#article_body h4 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+#article_body h5 {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+#article_body h6 {
+    font-size: 1rem;
+    font-weight: 600;
+}
+/* font */
+#article_body b {
+    font-weight: bold;
+}
+/* table */
+#article_body table {
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+#article_body td {
+padding: 10px;
+border: solid 1px #778ca3;
+}
+/* list */
+#article_body ul,
+#article_body ol {
+    padding: 0.5em 0.5em 0.5em 2em;
+  }
+#article_body li {
+    list-style-type: disc;
+    line-height: 1; /*文の行高*/
+    padding: 0.2em 0; /*前後の文との余白*/    
+}
+/* blockquotation */
+#article_body blockquote {
+    position: relative;
+    padding: 10px 15px 10px 60px;
+    box-sizing: border-box;
+    background: #efefef;
+    color: #555;
+    margin: 10px;
+}
+
+/* 記事 */
+#article_body blockquote:before{
+    display: inline-block;
+    position: absolute;
+    top: 18px;
+    left: 15px;
+    content: "\f10d";
+    font-family: FontAwesome;
+    color: #cfcfcf;
+    font-size: 30px;
+    line-height: 1;
+    font-weight: 900;
+}
+
+#article_body blockquote p {
+    padding: 0;
+    margin: 10px 0;
+    line-height: 1.7;
+}
+
+#article_body blockquote cite {
+    display: block;
+    text-align: right;
+    color: #888888;
+    font-size: 0.9em;
+}
+#article_body img {
+    max-width: 100%;
+}
+#article_content a {
+    color:#39a9bf;
+}
+
+/* form */
